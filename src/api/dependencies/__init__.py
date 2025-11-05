@@ -1,4 +1,4 @@
-from fastapi import Depends, HTTPException
+from fastapi import Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.db.models import Player
@@ -14,5 +14,6 @@ __all__ = [
 
     'HTTPException',
     'Depends',
-    'AsyncSession'
+    'AsyncSession',
+    'status'
 ]
