@@ -50,7 +50,7 @@ class GameResponseSchema(BaseModel):
 
 
 class GameStatsSchema(BaseModel):
-    sid:              str
+    id:               str
     player1_username: str
     player2_username: str
     winner_username:  Optional[str]
